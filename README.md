@@ -7,7 +7,7 @@ No diretório do projeto, você pode executar:
 Executa o aplicativo no modo de desenvolvimento.
 Abra http://localhost:3000 para visualizá-lo em seu navegador.
 
-**Ultimas updates**
+**Ultimos updates**
 - [x] Site responsivo
 - [x] Implementação de styled-components
 - [x] Hooks próprios
