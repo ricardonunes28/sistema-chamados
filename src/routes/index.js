@@ -6,7 +6,7 @@ import SignUp from '../pages/SignUp';
 import Dashboard from '../pages/DashBoard';
 
  
-export default function Routess(){
+export default function Router(){
     return(
         <Routes>
             <Route exact path="/" element={<RouteWrapper isPrivate={false}/>}>
