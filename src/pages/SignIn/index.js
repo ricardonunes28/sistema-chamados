@@ -1,12 +1,17 @@
 import { useSignin } from "./useSignin";
 import logo from "../../assets/logo.png";
 import { Container, FormLogin, Login, LoginArea, Link } from "./style";
+import { ButtonSave } from "../../components/ButtonSave";
 
 export default function SignIn() {
  const {
-  handleInputChangeState,
   handleSubmit,
-  navigate
+  navigate,
+  email,
+  password,
+  setEmail,
+  setPassword,
+  loadingAuth
  } = useSignin();
 
   return (
@@ -21,17 +26,17 @@ export default function SignIn() {
             type="text"
             name="email"
             placeholder="email@email.com"
-            value={handleInputChangeState.email}
-            onChange={handleInputChangeState}
+            value={email}
+            onChange={(e)=> setEmail(e.target.value)}
           />
           <input
             type="password"
             name="password"
             placeholder="*****"
-            value={handleInputChangeState.password}
-            onChange={handleInputChangeState}
+            value={password}
+            onChange={(e)=> setPassword(e.target.value)}
           />
-          <button type="submit">Acessar</button>
+          <ButtonSave loadingAuth={loadingAuth}  type={"Fazer Login"}/>
         </FormLogin>
 
         <Link  onClick={()=> navigate('/register')}>Criar uma conta</Link>

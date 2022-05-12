@@ -52,6 +52,14 @@ export const FormLogin = styled.form`
     background-color: #fff;
   }
 
+  button {
+    height: 35px;
+    border: 0;
+    border-radius: 7px;
+    background-color: #181c2e;
+    color: #fff;
+    font-size: 1.3em;
+  }
 `;
 
 export const Link = styled.a`
@@ -59,9 +67,3 @@ export const Link = styled.a`
   color: #000;
   cursor: pointer;
 `;
-
-// .login a {
-//   margin: 1.5em 0;
-//   color: #000;
-//   cursor: pointer;
-// } */
